@@ -4,7 +4,7 @@
 
 ## Running the Code
 
-First, make sure you have some reddit data loaded from the cluster and stored in a folder named 'reddit-subset'.
+First, make sure you have some reddit data loaded from the cluster and stored in a folder named 'reddit-subset'. https://coursys.sfu.ca/2024su-cmpt-353-d1/pages/RedditData
 
 ### 1. Load the data and do sentiment analysis 
 
