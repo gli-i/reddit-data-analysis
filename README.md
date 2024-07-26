@@ -4,6 +4,8 @@
 
 ## Running the Code
 
+First, make sure you have some reddit data loaded from the cluster and stored in a folder named reddit-subset .
+
 ### 1. Load the data and do sentiment analysis 
 
 - **Notebook:** `load_reddit_data.ipynb`
