@@ -1,10 +1,10 @@
-# CMPT 353 Project
+# CMPT 353 Project - Reddit Sentiment and Popularity Analysis
 
 ## Investigating the relationship between the sentiment of a reddit submission and it's popularity, defined by different factors
 
 ## Running the Code
 
-First, make sure you have some reddit data loaded from the cluster and stored in a folder named reddit-subset .
+First, make sure you have some reddit data loaded from the cluster and stored in a folder named 'reddit-subset'.
 
 ### 1. Load the data and do sentiment analysis 
 
