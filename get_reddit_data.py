@@ -1,15 +1,7 @@
 import sys
 import praw
-import pandas as pd
-from pyspark.sql import SparkSession, functions, types
+from pyspark.sql import SparkSession, types
 
-spark = SparkSession.builder.appName('reddit-submissions-getter').getOrCreate()
-spark.sparkContext.setLogLevel('WARN')
-
-assert sys.version_info >= (3, 8) # make sure we have Python 3.8+
-assert spark.version >= '3.2' # make sure we have Spark 3.2+
-
-# takes 1 argument - the name of the subreddit
 def main():
     # info for the reddit instance
     reddit = praw.Reddit(
@@ -19,34 +11,58 @@ def main():
         password="datascimorelikeateasci!!!",
         username="PuzzleHeaded_Stay653",
     )
-    subreddit = reddit.subreddit(subreddit_name)
-    
-    # create lists to store rows of submission & comment data
-    submissions_list = []
-    comments_list = []
 
-    # iterate through new submissions in the subreddit
-    for submission in subreddit.new(limit=100):
-        submissions_list.append([submission.id, submission.title, submission.selftext, submission.score, submission.num_comments])
+    subs_schema = types.StructType([
+        types.StructField('id', types.StringType()),
+        types.StructField('subreddit', types.StringType()),
+        types.StructField('title', types.StringType()),
+        types.StructField('selftext', types.StringType()),
+        types.StructField('score', types.LongType()),
+        types.StructField('upvote_ratio', types.FloatType()),
+        types.StructField('num_comments', types.LongType()),
+    ])
+    comms_schema = types.StructType([
+        types.StructField('link_id', types.StringType()),
+        types.StructField('body', types.StringType()),
+        types.StructField('score', types.LongType()),
+    ])
 
-        # iterate through comments in that submission
-        submission.comments.replace_more(limit=0)
-        for comment in list(submission.comments):
-            comments_list.append([comment.link_id, comment.body, comment.score])
+    overwrite = True
 
-    subs_df = spark.createDataFrame(submissions_list, ["id", "title", "selftext", "score", "num_comments"])
-    subs_df.show()
+    for subreddit_name in subreddit_names:
+        subreddit = reddit.subreddit(subreddit_name)
 
-    # for submission in subreddit.new(limit=2):
-    #     for comment in list(submission.comments):
-    #         comments_list.append([comment.link_id, comment.body, comment.score])
+        # create lists to store rows of submission & comment data
+        submissions_list = []
+        comments_list = []
 
-    comm_df = spark.createDataFrame(comments_list, ["link_id", "body", "score"])
-    comm_df.show()
+        # iterate through new submissions in the subreddit
+        for submission in subreddit.new(limit=100):
+            submissions_list.append([submission.id, submission.subreddit.display_name, submission.title, submission.selftext, submission.score, submission.upvote_ratio, submission.num_comments])
 
-    subs_df.write.json("reddit-data/submissions", compression='gzip', mode='overwrite')
-    comm_df.write.json("reddit-data/comments", compression='gzip', mode='overwrite')
+            # iterate through comments in that submission
+            submission.comments.replace_more(limit=0)
+            for comment in list(submission.comments):
+                comments_list.append([comment.link_id, comment.body, comment.score])
+
+        subs_df = spark.createDataFrame(submissions_list, schema=subs_schema)
+        comm_df = spark.createDataFrame(comments_list, schema=comms_schema)
+
+        if overwrite: # only overwrite previous data the first time
+            subs_df.write.json("reddit-data/submissions", compression='gzip', mode='overwrite')
+            comm_df.write.json("reddit-data/comments", compression='gzip', mode='overwrite')
+            overwrite = False;
+        else:
+            subs_df.write.json("reddit-data/submissions", compression='gzip', mode='append')
+            comm_df.write.json("reddit-data/comments", compression='gzip', mode='append')
+
 
 if __name__=='__main__':
-    subreddit_name = sys.argv[1]
+    spark = SparkSession.builder.appName('reddit-submissions-getter').getOrCreate()
+    spark.sparkContext.setLogLevel('WARN')
+
+    assert sys.version_info >= (3, 8) # make sure we have Python 3.8+
+    assert spark.version >= '3.2' # make sure we have Spark 3.2+
+
+    subreddit_names = sys.argv[1:]
     main()
