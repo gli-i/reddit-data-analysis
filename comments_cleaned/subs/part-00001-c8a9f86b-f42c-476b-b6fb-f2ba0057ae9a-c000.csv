@@ -1,0 +1,120 @@
+id,subreddit,title,time_created,num_comments,sentiment_score,pop_score,controversial
+1efa7ny,science,"Research unveiled disruptions in the brain connectivity of males with cocaine use disorder. This heightened connectivity is linked to greater impulsivity and borderline personality traits, suggesting disruptions in self-regulation and emotional processing.",13:39:28,12,-0.5267,0.9222311,false
+1ef9jji,science,"Physicists have imprinted chiral patterns onto a wave of electrons, opening the door to better analysis of molecules and materials. The study creates left-handed or right-handed coils of mass and charge that could be useful in electron microscopy.",13:13:52,2,0.7845,0.92022973,false
+1ef7ues,science,"Researchers found that both women and their partners generally held positive views about women’s masturbation | For women, these positive attitudes were linked to higher sexual satisfaction for both themselves and their partners.",12:05:36,46,0.8779,0.9326764,false
+1ef4z8y,science,A new report from the American Academy of Pediatrics warns against the overuse of tongue-tie surgeries and that breastfeeding problems were rarely caused by restrictive lingual frenulums.,10:12:32,86,-0.4767,0.94047606,false
+1ef3bet,science,"According to general relativity, black holes can form from ultra-intense light. But a new study says that light-induced black holes are not possible after all because quantum-mechanical effects cause too much leakage of energy for the collapse to proceed.",09:04:16,4,-0.3919,0.91356397,false
+1ef2g0o,science,"US adults aged 33 to 44, having experienced loss was linked to having an older biological age and a faster pace of ageing as measured by changes to DNA known as epigenetic clocks | Researchers say this may be a key way that experiencing the death of a family member impacts our health later in life.",08:30:08,45,-0.7351,0.9651902,false
+1ef2ch7,science,"“Dancing” nanofibers can stimulate the receptors needed to repair damaged cartilage cells more effectively, a new study has found. Similar bioactive materials could also be used to regenerate neurons or even bone, the researchers believe.",08:25:52,1,0.2944,0.94173247,false
+1ef2bgb,science,"Study finds that people with Substance Use Disorders, particularly Alcohol and Tobacco Use Disorders, show elevated rates of pathological anger",08:23:44,32,-0.5719,0.92510945,false
+1ef087b,science,Complex life on Earth may have begun 1.5 billion years earlier than thought.,06:58:24,345,0.0,0.96822006,false
+1eexpi9,science,"Majority of men with alcohol dependence suffer sexual dysfunction, study finds",05:01:04,426,-0.743,0.9370004,false
+1eewkrl,science,COVID Virus Found in 'Common Backyard Animals' in US | Researchers examined 23 common backyard species in Virginia and found that six of them harbored the virus.,03:57:04,81,0.0,0.94400907,false
+1eevrxz,science,"Amorphous semiconductors lack a defined finite unit cell. Still, they pose an economic alternative to crystalline semiconductors, e.g. in solar cells. Here, researchers from ETH Zurich, propose scanning reflectance anisotropy microscopy (SRAM) for strain mapping and engineering of such materials.",03:05:52,1,-0.4019,0.74744076,false
+1eev770,science,"Researchers studied the genetic diversity of 6 antelope species in zoos and found that  management intensity, wild population size, and the origin of founders all influence the genetic diversity of the zoo populations. They also recommend using genetic data besides pedigree data for better managemen",02:27:28,1,0.6597,0.6983547,true
+1eeuqxa,science,"A single injection of a new, off-the-shelf stem cell therapy for knee osteoarthritis significantly improved pain and function for up to 12 months in 75% of participants involved in a clinical trial. The treatment also has the potential to halt the disease’s progression.",01:55:28,40,-0.0516,0.9762061,false
+1eeu96t,science,"Comparative analysis of tobacco industry cigarette marketing expenditures in the United States, 2009–2018. In 2017, tobacco companies spent around $1 million every hour to promote cigarettes and smokeless tobacco in the US",01:21:20,5,0.6597,0.8917815,false
+1eete2w,science,New Zealand’s endangered flightless birds are seeking refuge in moa graveyard locations — where six species of moa last lived before going extinct,00:19:28,14,-0.296,0.9517355,false
+1eeswdb,science,"A short-term vegan diet has been linked with reductions to our biological age estimates, say US researchers who fed 21 pairs of twins either an omnivorous or vegan diet over 8 weeks. Those who ate vegan had lower ages to their hearts, hormones, livers, and inflammatory and metabolic systems.",23:47:28,229,-0.296,0.8842383,false
+1eeku5d,science,Son preference is positively correlated with patrilocality rates across states and districts of India. Families practice sex selection and discriminate against daughters because of patrilocality norms that dictate the later life co-residence between parents and sons.,16:23:44,5,0.5267,0.7887735,false
+1eek62o,science,"Donald Trump has built a cult of personality around himself. This personality cult and demand for absolute loyalty is supported by conscientious followers in need of a cause they can commit to, according to study.",15:53:52,1344,0.7579,0.76779485,true
+1eehsj1,science,New Vestiges of the First Life on Earth Discovered in Saudi Arabia,14:07:12,4,0.0,0.9107928,false
+1eehf1h,science,"High levels of body fat stored in belly or arms may be indicative to development  of diseases like Alzheimer's and Parkinson's, according to new research. Study also found that people with a high level of muscle strength were less likely to develop these diseases than people with low muscle strength",13:50:08,10,0.7783,0.94986874,false
+1eeebnc,science,"American youth whose immediate family members have experienced incarceration had 1.5–16.2 times the prevalence of mental health and physical health diagnoses compared to a matched sample and the total population sample. (n=38,263)",11:35:44,27,0.0,0.9364284,false
+1eecxgn,science,A biocompatible gene delivery nanocarrier constructed from gold nanostars for use in cancer treatments,10:36:00,4,-0.6597,0.9261218,false
+1eec9yf,science,Glyphosate enters European rivers predominantly via wastewater,10:08:16,6,0.0,0.9325791,false
+1eeateo,science,"Women in same-sex relationships have 69% higher odds of committing crimes compared to their peers in opposite-sex relationships. In contrast, men in same-sex relationships had 32% lower odds of committing crimes compared to men in heterosexual relationships, finds a new Dutch study.",09:02:08,4781,-0.1531,0.80846965,false
+1efzokf,programming,Swift Homomorphic Encryption Package,10:44:32,3,0.2023,0.6826976,true
+1efzoiq,programming,C Macro Reflection in Zig – Zig Has Better C Interop Than C Itself,10:44:32,1,0.4404,0.74328125,false
+1efzmry,programming,JavaScript Garbage Collection and Closures,10:42:24,1,0.0,0.57838094,true
+1efzict,programming,Functional programming languages should be so much better at mutation than they are,10:36:00,51,0.4902,0.7988485,false
+1efyjcl,programming,SQL Murder Mystery: A Fun Way to Learn SQL,09:59:44,3,-0.34,0.54881746,true
+1efyix4,programming,"How to set Eslint, Prettier, and Husky in your Next.js",09:57:36,0,0.4767,0.0,true
+1efxyl1,programming,A Deep Dive into German Strings,09:36:16,4,0.0,0.5092494,true
+1efwrg5,programming,New to the web platform in July,08:47:12,0,0.0,0.0,true
+1efuacg,programming,Inside Crowdstrike's Deployment Process,07:09:04,13,0.0,0.91086394,false
+1efrppq,programming,BunkerWeb - The open-source and next-gen Web Application Firewall (WAF),05:09:36,6,0.0,0.65902233,true
+1efr3z6,programming,On Quick and Dirty Caches,04:37:36,2,-0.4404,0.67721254,false
+1efpab9,programming,HTTP/0.9 From Scratch,02:48:48,0,0.0,0.522475,true
+1efogi1,programming,The Developer’s Guide to Database Proxies: When to Use Them and How to Create One,01:51:12,0,0.2732,0.39276698,true
+1efn831,programming,80% of programmers are not happy,00:23:44,347,-0.4585,0.8802545,false
+1efmz3f,programming,Get ready for more Java licensing changes,00:06:40,7,0.3612,0.0,true
+1efmgci,programming,Finding Nash Equilibria through Simulation,23:32:32,0,0.0,0.57838094,true
+1efm4ux,programming,"Understanding HTTP/3 - Features , Benefits & Impact",23:11:12,0,0.3818,0.40245128,true
+1eflzyf,programming,JSON Web Token (JWT) Security & Best Practices,23:02:40,0,0.765,0.522475,true
+1eflqyr,programming,Mastering the Nullish Coalescing Operator (??),22:45:36,2,0.0,0.0,true
+1efkuxb,programming,Comparing grpc vs graphql,21:52:16,3,0.0,0.0,true
+1efjy98,programming,"🚀 New YouTube Video: \"Intro To Defensive Security with TryHackMe {Tutorial}\" – Learn the Essentials of Cybersecurity! 🛡️",21:01:04,0,0.9933,0.0,true
+1efjsii,programming,Unlock Your Coding Potential: Create Your Own Programming Language - Introverted Games,20:52:32,4,0.2732,0.0,true
+1eg17xw,technology,Logitech has an idea for a “forever mouse” that requires a subscription | Exec says mouse that requires a regular fee for software updates is possible.,11:46:24,838,0.0,0.8941883,false
+1eg0vz6,technology,Microsoft says CrowdStrike outage affected many more devices than reported,11:33:36,15,-0.1531,0.9359787,false
+1eg0gsw,technology,Why You Should Hate the Proposed UN Cybercrime Treaty,11:16:32,2,-0.5719,0.63643223,true
+1efzz61,technology,Spotify expands lyrics access for free users,10:55:12,2,0.5719,0.49327067,true
+1efzp1i,technology,Is A.I. Unstoppable? Some Hollywood Craftspeople Fear the Answer Is Yes.,10:44:32,10,-0.3182,0.0,true
+1efz10v,technology,Microsoft has more Outages,10:18:56,0,0.0,0.49637008,true
+1efz0zv,technology,"Tech groups, others plan full fight over kids’ online safety bills",10:18:56,7,0.0516,0.7981193,false
+1efz023,technology,The KOSA Internet Censorship Bill Just Passed The Senate—It's Our Last Chance To Stop It,10:16:48,213,-0.0516,0.95520693,false
+1efyy1v,technology,"Senate passes landmark bills to protect kids online, raising pressure on House",10:14:40,8,0.1779,0.6692292,true
+1efy8nd,technology,Meta to pay $1.4 billion settlement with Texas over facial recognition and photo tags,09:46:56,1,-0.1027,0.734142,false
+1efxbt6,technology,How the Kids Online Safety Act Was Dragged Into a Political War,09:10:40,3,-0.3182,0.7356013,true
+1efxai4,technology,Spyware turned this Kansas high school into a ‘red zone’ of dystopian surveillance,09:08:32,3,0.0,0.80762,false
+1efxaf7,technology,Students and professors expect more cheating thanks to AI,09:08:32,18,-0.1815,0.71117014,true
+1efwtep,technology,Rivian and Volkswagen Are 1 Step Closer to $5 Billion Deal,08:49:20,20,0.0,0.67054933,true
+1efwd7p,technology,Microsoft's Azure Portal takes a worldwide tumble,08:32:16,5,0.0,0.658417,true
+1efw6jt,technology,How to opt out of facial recognition at airports (if you're American),08:23:44,169,0.0,0.8879538,false
+1efw619,technology,Netherlands-based MY.GAMES to sell Boosty after accusations of funnelling donations to Russian army,08:23:44,1,-0.296,0.5379394,true
+1efw5qt,technology,NJ Lawmakers hear calls to restrict pornography access,08:23:44,12,-0.3818,0.5230464,true
+1efvv0t,technology,"US Air Force awards contracts for drone wingman's AI brains, but keeps details secret",08:10:56,4,0.25,0.6230305,true
+1efvnpx,technology,MIT scientists develop transistor with nanosecond switching and billion-cycle durability,08:04:32,11,0.0,0.66979015,true
+1efvjes,technology,China Demonstrates the First Entirely Meltdown-Proof Nuclear Reactor,08:00:16,33,0.0,0.69407,true
+1efvcd2,technology,"Fed Up, Singles Are DIYing Their Own Dating Apps",07:51:44,52,0.0,0.8669022,false
+1efv8iq,technology,Canva adds a new generative AI platform to its growing creative empire | Canva has acquired local startup Leonardo.ai to bolster the design platform’s Magic Studio AI tools,07:47:28,1,0.5574,0.575236,true
+1efv1kk,technology,"Social Media Is Junk Food for Information Foragers • Social media exploits our evolved need for information, feeding us fluff and outright misinformation. A new science of human collective behavior can help us retake control",07:38:56,4,-0.25,0.8317545,false
+1efv1gc,technology,"Bay Area tech startup Moxion that raised $110 million shuts down, laying off almost 250",07:38:56,39,0.0,0.7217315,true
+1eg9ydl,technology,"Management consultants are the main group profiting from AI — HR, legal and accounting departments may be unwilling to help embed disruptive technologies that may make workers redundant",17:49:04,1,0.5423,0.5,false
+1eg9fea,technology,"Microsoft Apologizes to Users for Widespread Outage Disrupting Xbox, Outlook, and Minecraft",17:25:36,2,0.3612,0.68097395,false
+1eg93w8,technology,Apple says Safari protects your privacy. We fact-checked those claims.,17:10:40,1,0.3182,0.44291982,true
+1eg8vhh,technology,Qorvo beats first quarter revenue estimates on upbeat chip demand,17:00:00,0,-0.128,0.3826401,true
+1eg8ta8,technology,"Intel plans to cut thousands of jobs to finance recovery, Bloomberg News reports",16:57:52,2,-0.2732,0.43880266,true
+1eg8qcq,technology,"Microsoft sinks, chipmakers climb as AI rally faces divide",16:53:36,1,0.0,0.5,true
+1eg86o4,technology,Meta to pay $1.4 billion settlement after Texas facial recognition complaint,16:30:08,0,-0.3818,0.76225084,false
+1eg7hfv,technology,Charter failed to notify 911 call centers and FCC about VoIP phone outages,16:00:16,0,-0.5106,0.7263807,false
+1eg6rde,technology,"A Blood Test Accurately Diagnosed Alzheimer’s 90% of the Time, Study Finds",15:28:16,1,0.0,0.86957264,false
+1eg60v4,technology,OpenAI releases ChatGPT's hyper-realistic voice to some paying users | TechCrunch,14:58:24,1,0.0,0.6357658,true
+1eg5zkt,technology,Senate To Kids: We’ll Listen To You When You Agree With Us On KOSA,14:56:16,25,0.3612,0.8756997,false
+1eg5r9h,technology,"Amazon Responsible for Hazardous Products Sold on Its Website, CPSC Says - CNET",14:47:44,7,0.4588,0.9019754,false
+1eg5p5g,technology,"Intel to Cut Thousands of Jobs to Reduce Costs, Fund Turnaround",14:45:36,50,-0.2732,0.92510945,false
+1eg4vt0,technology,A new White House report embraces open-source AI,14:11:28,2,0.0,0.7293057,false
+1eg4c70,technology,BioNTech Announces Positive Topline Phase 2 Results for mRNA Immunotherapy Candidate BNT111 in Patients with Advanced Melanoma | BioNTech,13:50:08,2,0.6808,0.558302,true
+1eg4as3,technology,A New Way to Make Element 116 Opens the Door to Heavier Atoms,13:48:00,1,0.0,0.8560328,false
+1eg49op,technology,Your new AI friend is almost ready to meet you.,13:48:00,7,0.6605,0.0,true
+1eg3tsn,technology,Microsoft Reports Slower Azure Cloud Growth; Shares Drop,13:28:48,11,0.4019,0.7491881,false
+1eg3atr,technology,Microsoft 365 goes down - again,13:09:36,78,0.0,0.9389748,false
+1eg2kxe,technology,"Cybersecurity firm Tenable exploring potential sale, Bloomberg News reports",12:39:44,0,0.0,0.46452853,true
+1eg27ws,technology,OpenAI starts roll-out of advanced voice mode to some ChatGPT Plus users,12:26:56,0,0.25,0.5900237,true
+1eg1vcn,technology,"Electrical brain stimulation can ease heartbreak, study finds",12:12:00,13,-0.296,0.7334535,true
+1eg1rn4,technology,Brazil proposes $4 billion AI investment plan,12:07:44,2,0.0,0.4384507,true
+1eg1rd8,technology,Friend's $99 necklace uses AI to help combat loneliness,12:07:44,13,-0.3612,0.0,true
+1eg9xjt,programming,`find` + `mkdir` is Turing complete,17:49:04,2,0.0,0.63702387,false
+1eg83el,programming,Tanmai Gopal: Unlocking the Potential of Unified APIs,16:25:52,2,0.3818,0.0,true
+1eg7xlm,programming,🎧 Julia Ferraioli - Capturing Untold Open Source Stories | 🎙️ Maintainable.fm,16:19:28,0,0.0,0.0,true
+1eg7956,programming,[Blog] Python Project Management Primer,15:49:36,0,0.0,0.0,true
+1eg5esy,programming,My plan to win a 1981 electric DeLorean from Google,14:32:48,3,0.5859,0.0,true
+1eg3k8n,programming,Is your PC storage getting clogged with unnecessary build artifacts? These files are auto-generated for each build and just take up space. I made a handy tool to clean up these junk files and free up your storage. Check it out!,13:20:16,10,0.7424,0.0,true
+1eg37yb,programming,Data cleaning in python - beginner guide,13:05:20,0,0.0,0.3856432,true
+1eg2u76,programming,Scala in 100 Seconds,12:50:24,5,0.0,0.0,true
+1eg1rm5,programming,My thoughts on Python in Excel,12:07:44,0,0.4588,0.0,true
+1efzz1m,programming,Unsafe read beyond of death,10:55:12,5,-0.5994,0.7285099,false
+1efzyoe,programming,What’s New in Go 1.23: Iterators and reflect.Value.Seq,10:55:12,0,0.0,0.57838094,true
+1efzyim,programming,Union of Finite Automata,10:55:12,0,0.0,0.0,true
+1efzxev,programming,Racing round and round: The little bug that could,10:53:04,0,0.0,0.3826401,true
+1efzwd3,programming,cppfront: Midsummer update,10:53:04,1,0.0,0.70119715,false
+1efzvy7,programming,Compare the Assembly Generated for Static vs Dynamic Dispatch in Rust,10:53:04,0,0.3818,0.3826401,true
+1efzvpl,programming,Cryptographic Right Answers: Post Quantum Edition,10:50:56,1,0.0,0.44914022,true
+1efzv5w,programming,Quint is a modern and executable specification language,10:50:56,0,0.0,0.52555037,true
+1efzuve,programming,Whippet is a garbage collector library for language run-time authors,10:50:56,0,0.0,0.60914314,true
+1efztr6,programming,My mental model of setf was wrong [common lisp],10:48:48,1,-0.4767,0.48566988,true
+1efztds,programming,"Data.Maybe, and thoughts on library design",10:48:48,0,0.0,0.3856432,true
+1efzsyo,programming,Deno: What we got wrong about HTTP imports,10:48:48,23,-0.4767,0.84976673,false
+1efzs27,programming,The evolution of Ruby's Range class,10:46:40,0,0.0,0.5,true
+1efzrbv,programming,DARPA: Translating All C to Rust (Tractor),10:46:40,0,0.0,0.56351256,true

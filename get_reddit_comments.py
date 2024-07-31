@@ -31,8 +31,8 @@ def main():
         types.StructField('date_created', types.FloatType())
     ])
 
-    overwrite_subs = True
-    overwrite_comms = True
+    overwrite_subs = False
+    overwrite_comms = False
 
     for subreddit_name in subreddit_names:
         subreddit = reddit.subreddit(subreddit_name)
@@ -42,51 +42,48 @@ def main():
         comments_list = []
 
         # iterate through new submissions in the subreddit
-        for submission in subreddit.new(limit=500):
+        for submission in subreddit.new(limit=50):
             submissions_list.append(
                 [submission.id, submission.subreddit.display_name, submission.title, submission.selftext, submission.score, 
                  submission.upvote_ratio, submission.num_comments, submission.created_utc]
             )
 
             # iterate through comments in that submission
-            submission.comments.replace_more(limit=50)
+            submission.comments.replace_more(limit=0)
             for comment in list(submission.comments):
+                # if comment.author == "AutoModerator":   # r/science has this bot that automatically comments on every post
+                #     continue
+
+                if comment.body == "[removed]": # if the post was removed, ignore it
+                    continue
+
                 comments_list.append(
-                    [comment.link_id, comment.body, comment.score, comment.created_utc]
+                    [comment.link_id, (comment.body)[:800], comment.score, comment.created_utc] # really long posts are truncated to 800 chars
                 )
-        print("lists created!\n")
 
         subs_df = spark.createDataFrame(submissions_list, schema=subs_schema)
         comm_df = spark.createDataFrame(comments_list, schema=comms_schema)
-
-        print("dfs created!\n")
 
         # time must be converted from unix time to timestamp
         subs_df = subs_df.withColumn("date_created", subs_df["date_created"].cast(TimestampType()))
         comm_df = comm_df.withColumn("date_created", comm_df["date_created"].cast(TimestampType()))
 
-        subs_df.repartition(100)
-        comm_df.repartition(100)
+        comm_df = comm_df.repartition(8)
 
-        while (subs_df.isEmpty == False):
-            limited_subs = subs_df.limit(100).cache()
-            subs_df = subs_df.subtract(limited_subs)
+        if overwrite_subs:
+            subs_df.write.json("reddit-data/comments/subs", compression='gzip', mode='overwrite')
+        else:
+            subs_df.write.json("reddit-data/comments/subs", compression='gzip', mode='append')
 
-            if overwrite_subs: # only overwrite previous data the first time
-                limited_subs.write.json("reddit-data/submissions", compression='gzip', mode='overwrite')
-                overwrite_subs = False
-            else:
-                limited_subs.write.json("reddit-data/submissions", compression='gzip', mode='append')
-
-        while (comm_df.isEmpty == False):
-            limited_comm = comm_df.limit(100).cache()
+        while (comm_df.isEmpty() == False):
+            limited_comm = comm_df.limit(100)
             comm_df = comm_df.subtract(limited_comm)
 
             if overwrite_comms: # only overwrite previous data the first time
-                limited_comm.write.json("reddit-data/submissions", compression='gzip', mode='overwrite')
+                limited_comm.write.json("reddit-data/comments/comms", compression='gzip', mode='overwrite')
                 overwrite_comms = False
             else:
-                limited_comm.write.json("reddit-data/submissions", compression='gzip', mode='append')
+                limited_comm.write.json("reddit-data/comments/comms", compression='gzip', mode='append')
 
 
 if __name__=='__main__':
