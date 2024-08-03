@@ -31,7 +31,7 @@ Alternativley, if you want to load your own data from a different set of subredd
 ### 2. Load the comments data: run get_reddit_comments.py and provide the list of subreddits you are choosing 
 - **Python script:** `get_reddit_comments.py`
 - **Description:** This script loads commetns from the given subreddits and links them to their respective submissions and saves the comments and submissions dataframes under 'comments_cleaned/'. The subset of submissions in this folder has additional attributes, representing the number of positive, negative and netural comments under each post.
-- **Instructions:** Open `link_comments_submissions_ipynb` in Jupyter Notebook and run all cells from start to finish. 
+- **Instructions:** Run `get_reddit_comments.py` and provide the subreddits you want in the command line arguments 
 
 ### 3. Run stats tests 
 
