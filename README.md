@@ -1,27 +1,42 @@
 # CMPT 353 Project - Reddit Sentiment and Popularity Analysis
 
-## Investigating the relationship between the sentiment of a reddit submission and it's popularity, defined by different factors
+## Investigating the relationship between the sentiment of a reddit submission and it's popularity, as well as the correlation of other attributes. 
 
 ## Running the Code
+We used the following subreddits for our analysis: 
 
-First, make sure you have some reddit data loaded from the cluster and stored in a folder named 'reddit-subset'. https://coursys.sfu.ca/2024su-cmpt-353-d1/pages/RedditData
+  “r/science”, “r/technology”, “r/programming”, “r/antiwork”, and “r/aznidentity”. 
+  
+If you want to use your own subreddit data, make sure you have some reddit data loaded from the cluster and stored in a folder named 'reddit-subset'. https://coursys.sfu.ca/2024su-cmpt-353-d1/pages/RedditData. 
 
-### 1. Load the data and do sentiment analysis 
+Follow the steps below to use our reddit data: 
 
-- **Notebook:** `load_reddit_data.ipynb`
-- **Description:** This notebook loads the reddit data from reddit-subset and performs sentiment analysis on comments and submissions. This can take a few minutes! 
-- **Instructions:** Open `load_reddit_data.ipynb` in Jupyter Notebook and run all cells from start to finsih. 
 
-### 2. Link comments to submissions
+### 1.  Run stats tests 
 
-- **Notebook:** `link_comments_submissions_ipynb`
-- **Description:** This notebook links comments to the submission it was posted on and counts the number of positive/negative/neutral comments for each post. It also calculates a popularity score for each submissinon, based on the number of positive/neutral/negative comments. 
+- **Notebook:** `stats_tests.ipynb`
+- **Description:** This notebook does different stats tests to analyze the relationship between several attributes in the submissions and comments dataframes.
+- **Instructions:** Open `stats_tests.ipynb` in Jupyter Notebook and run all cells from start to finish
+
+
+Alternativley, if you want to load your own data from a different set of subreddits: 
+
+
+### 1. Load the submissions data and do sentiment analysis 
+
+- **Notebook:** `clean_reddit_posts.ipynb`
+- **Description:** This notebook loads the reddit submissions from reddit-data and performs sentiment analysis as well as adds necessary columns to the submissions dataframe, then saves as a csv file under 'submissions_cleaned/'. 
+- **Instructions:** Open `clean_reddit_posts.ipynb` in Jupyter Notebook and run all cells from start to finsih. 
+
+### 2. Load the comments data: run get_reddit_comments.py and provide the list of subreddits you are choosing 
+- **Python script:** `get_reddit_comments.py`
+- **Description:** This script loads commetns from the given subreddits and links them to their respective submissions and saves the comments and submissions dataframes under 'comments_cleaned/'. The subset of submissions in this folder has additional attributes, representing the number of positive, negative and netural comments under each post.
 - **Instructions:** Open `link_comments_submissions_ipynb` in Jupyter Notebook and run all cells from start to finish. 
 
 ### 3. Run stats tests 
 
 - **Notebook:** `stats_tests.ipynb`
-- **Description:** This notebook does different stats tests to analyze the relationship between sentiment and popularity of a submissions.
+- **Description:** This notebook does different stats tests to analyze the relationship between several attributes in the submissions and comments dataframes.
 - **Instructions:** Open `stats_tests.ipynb` in Jupyter Notebook and run all cells from start to finish
 
 
