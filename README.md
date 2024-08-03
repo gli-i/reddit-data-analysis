@@ -1,4 +1,4 @@
-# CMPT 353 Project - Reddit Sentiment and Popularity Analysis
+# CMPT 353 Project - Reddit Data Analysis
 
 ## Investigating the relationship between the sentiment of a reddit submission and it's popularity, as well as the correlation of other attributes. 
 
@@ -7,7 +7,7 @@ We used the following subreddits for our analysis:
 
   “r/science”, “r/technology”, “r/programming”, “r/antiwork”, and “r/aznidentity”. 
   
-If you want to use your own subreddit data, make sure you have some reddit data loaded from the cluster and stored in a folder named 'reddit-subset'. https://coursys.sfu.ca/2024su-cmpt-353-d1/pages/RedditData. 
+If you want to use your own subreddit data, make sure you have some reddit data loaded from the cluster and stored in a folder named 'reddit-data'. https://coursys.sfu.ca/2024su-cmpt-353-d1/pages/RedditData. 
 
 Follow the steps below to use our reddit data: 
 
