@@ -7,31 +7,28 @@ We used the following subreddits for our analysis:
 
   “r/science”, “r/technology”, “r/programming”, “r/antiwork”, and “r/aznidentity”. 
   
-If you want to use your own subreddit data, make sure you have some reddit data loaded from the cluster and stored in a folder named 'reddit-data'. https://coursys.sfu.ca/2024su-cmpt-353-d1/pages/RedditData. 
-
-Follow the steps below to use our reddit data: 
+However, you may specify the specific subreddits you want to use in Step 1.
 
 
-### 1.  Run stats tests 
+### 1. Load the submissions and comments data
+**Python script:** `get_reddit_posts.py`
+- **Description:** This script loads the 500 newest submissions from the given subreddit(s) and saves the submissions dataframe as compressed json files under 'reddit-data/submissions/', overwriting the previous contents.
+- **Instructions:** Run `get_reddit_posts.py` and provide the subreddits you want in the command line arguments (ex. python3 get_reddit_posts.py antiwork science).
 
-- **Notebook:** `stats_tests.ipynb`
-- **Description:** This notebook does different stats tests to analyze the relationship between several attributes in the submissions and comments dataframes.
-- **Instructions:** Open `stats_tests.ipynb` in Jupyter Notebook and run all cells from start to finish
+**Python script:** `get_reddit_comments.py`
+- **Description:** This script loads the 50 newest submissions from the given subreddit(s), along with their respective (top-level) comments. It saves the submissions dataframe under 'reddit-data/comments/subs' and the comments dataframe under 'reddit-data/comments/comms', overwriting the previous contents. Note that the subreddits used here should be the same ones used during get_reddit_posts.py.
+- **Instructions:** Run `get_reddit_comments.py` and provide the subreddits you want in the command line arguments.
 
 
-Alternativley, if you want to load your own data from a different set of subreddits: 
-
-
-### 1. Load the submissions data and do sentiment analysis 
-
+### 2. Clean the submissions and comments data
 - **Notebook:** `clean_reddit_posts.ipynb`
-- **Description:** This notebook loads the reddit submissions from reddit-data and performs sentiment analysis as well as adds necessary columns to the submissions dataframe, then saves as a csv file under 'submissions_cleaned/'. 
-- **Instructions:** Open `clean_reddit_posts.ipynb` in Jupyter Notebook and run all cells from start to finsih. 
+- **Description:** This notebook loads the reddit submissions from reddit-data, adds necessary columns and removes invalid or unneeded data, then saves as a csv file under 'submissions_cleaned/', overwriting the previous contents.
+- **Instructions:** Open `clean_reddit_posts.ipynb` in Jupyter Notebook and run all cells from start to finish. 
 
-### 2. Load the comments data: run get_reddit_comments.py and provide the list of subreddits you are choosing 
-- **Python script:** `get_reddit_comments.py`
-- **Description:** This script loads commetns from the given subreddits and links them to their respective submissions and saves the comments and submissions dataframes under 'comments_cleaned/'. The subset of submissions in this folder has additional attributes, representing the number of positive, negative and netural comments under each post.
-- **Instructions:** Run `get_reddit_comments.py` and provide the subreddits you want in the command line arguments 
+- **Notebook:** `clean_reddit_comments.ipynb`
+- **Description:** This notebook loads the reddit comments and their respective submissions from reddit-data, adds necessary columns and removes invalid or unneeded data, then saves as a csv file under 'comments_cleaned/', overwriting the previous contents.
+- **Instructions:** Open `clean_reddit_comments.ipynb` in Jupyter Notebook and run all cells from start to finish. 
+
 
 ### 3. Run stats tests 
 

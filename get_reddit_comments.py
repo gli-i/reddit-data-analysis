@@ -31,8 +31,8 @@ def main():
         types.StructField('date_created', types.FloatType())
     ])
 
-    overwrite_subs = False
-    overwrite_comms = False
+    overwrite_subs = True
+    overwrite_comms = True
 
     for subreddit_name in subreddit_names:
         subreddit = reddit.subreddit(subreddit_name)
