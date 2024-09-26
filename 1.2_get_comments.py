@@ -1,5 +1,6 @@
 import sys
 import praw
+import config
 from pyspark.sql import SparkSession, types
 from pyspark.sql.types import TimestampType
 from pyspark.sql.functions import isnan
@@ -7,11 +8,11 @@ from pyspark.sql.functions import isnan
 def main():
     # info for the reddit instance
     reddit = praw.Reddit(
-        client_id="gpyHj7yTFPBpeNY6Xxv_Tw",
-        client_secret="uyJS3keAzErsZJ6t4DY7RMwe5P1JxA",
-        user_agent="353 Sentiment Analysis by /u/PuzzleHeaded_Stay653",
-        password="datascimorelikeateasci!!!",
-        username="PuzzleHeaded_Stay653",
+        client_id=config.client_id,
+        client_secret=config.client_secret,
+        user_agent=config.user_agent,
+        password=config.password,
+        username=config.username,
     )
 
     subs_schema = types.StructType([

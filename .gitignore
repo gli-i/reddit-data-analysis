@@ -1,2 +1,6 @@
 .ipynb_checkpoints
 reddit-data/*
+
+# necessary in order to extract data using the reddit API (in Step 1)
+# API key can be generated (with a reddit account) at https://old.reddit.com/prefs/apps/
+config.py
