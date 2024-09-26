@@ -12,11 +12,12 @@ However, you may specify the specific subreddits you want to use in Step 1.
 ### 0. Set up OAUTH for PRAW
 **Instructions:** Instructions to set up OAUTH and generate your own API key can be found in Step 1 at https://praw.readthedocs.io/en/v3.6.2/pages/oauth.html.
 - **Details:** Create a config.py file, with the following content (replace with your OAUTH info):
-client_id="YOUR_KEY"
-client_secret="YOUR_SECRET"
-user_agent="YOUR_USER_AGENT"
-password="YOUR_REDDIT_PASSWORD"
-username="YOUR_REDDIT_USERNAME"
+
+client_id="YOUR_KEY"  
+client_secret="YOUR_SECRET"  
+user_agent="YOUR_USER_AGENT"  
+password="YOUR_REDDIT_PASSWORD"  
+username="YOUR_REDDIT_USERNAME"  
 
 
 ### 1. Load the submissions and comments data
